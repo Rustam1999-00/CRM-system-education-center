@@ -3,6 +3,7 @@ const Students = require("../models/Students");
 exports.createStudents = async (req, res) => {
   const { name, parents, phone,parentsPhone ,profession} = req.body;
   const { imageName: image } = req;
+  console.log( Students);
 
   await Students.create({
     name, parents, phone,parentsPhone ,profession,image

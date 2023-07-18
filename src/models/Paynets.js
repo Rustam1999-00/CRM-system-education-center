@@ -6,7 +6,7 @@ const schema = new Schema(
       type: String,
       required: true,
     },
-    parents: {
+    profession: {
       type: String,
       required: true,
     },
@@ -14,21 +14,17 @@ const schema = new Schema(
       type: Number,
       required: true,
     },
-    parentsPhone: {
-      type: Number,
-      required: true,
-    },
-    profession: {
+    teacher_name: {
       type: String,
       required: true,
     },
-    image: {
-      type: String,
+    
+    payment_date: {
+      type: Object,
       required: true,
     },
-   
   },
   { timestamps: true }
 );
 
-module.exports = model("Students", schema);
+module.exports = model("Payments", schema);
