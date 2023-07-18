@@ -35,5 +35,5 @@ exports.deletePaynets = async (req, res) => {
 
   await Paynets.findByIdAndDelete(id);
 
-  res.status(202).json({ message: "Success Deleted Paynets" });
+  res.status(202).json({ message: "Success Deleted Payments" });
 };
